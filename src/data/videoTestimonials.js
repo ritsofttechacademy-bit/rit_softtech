@@ -1,0 +1,35 @@
+export const videoTestimonials = [
+  {
+    id: 1,
+    name: "Anjali Reddy",
+    course: "Python Full Stack Development",
+    role: "Software Developer",
+    company: "Demo Technologies",
+    thumbnail: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
+    videoUrl: "", // intentionally empty for demo
+    duration: "01:42",
+    featured: true,
+  },
+  {
+    id: 2,
+    name: "Rahul Verma",
+    course: "Java Full Stack Development",
+    role: "Software Engineer",
+    company: "Accenture",
+    thumbnail: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop",
+    videoUrl: "",
+    duration: "02:15",
+    featured: true,
+  },
+  {
+    id: 3,
+    name: "Sneha Patel",
+    course: "Data Science & AI",
+    role: "Data Analyst",
+    company: "TCS",
+    thumbnail: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop",
+    videoUrl: "",
+    duration: "01:58",
+    featured: true,
+  },
+];

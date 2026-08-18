@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">RIT Softtech Academy</title>
+  <desc id="desc">RIT Softtech Academy stacked logo in royal blue and navy.</desc>
+  <defs>
+    <linearGradient id="ritBlue" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0077E5"/>
+      <stop offset="0.55" stop-color="#0052B8"/>
+      <stop offset="1" stop-color="#071F55"/>
+    </linearGradient>
+    <linearGradient id="ritNavy" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0A326F"/>
+      <stop offset="1" stop-color="#071F55"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="760" height="360" fill="#fff"/>
+
+  <g fill="url(#ritBlue)">
+    <path d="M56 58h139c30 0 54 8 72 24 18 15 27 36 27 62 0 20-6 38-19 52-12 14-29 24-50 30l79 100h-82l-66-90h-37v90H56V58Zm63 56v70h75c12 0 21-3 28-9 7-6 10-15 10-26 0-11-3-19-10-26-7-6-17-9-29-9h-74Z"/>
+    <path d="M354 112h62v214h-62V112Z"/>
+    <path d="M462 112h242v60h-90v154h-62V172h-90v-60Z"/>
+  </g>
+
+  <g transform="translate(329 22)">
+    <path d="M70 0 128 24 70 48 12 24 70 0Z" fill="url(#ritNavy)"/>
+    <path d="M33 48 70 64l37-16v24L70 91 33 72V48Z" fill="#0077E5"/>
+    <path d="M128 24v38" stroke="#071F55" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="128" cy="67" r="7" fill="#071F55"/>
+    <path d="M128 74c6 8 7 17 2 26h-4c-5-9-4-18 2-26Z" fill="#071F55"/>
+  </g>
+
+  <g transform="translate(76 144)">
+    <path d="M72 0c40 0 73 29 73 67 0 33-24 60-57 66-8-17-13-35-10-53 2-14 8-24 21-30-14-11-32-13-49-7 1 21-8 38-26 50C21 71 11 59 0 46 8 19 35 0 72 0Z" fill="#fff"/>
+    <path d="M47 30c35-14 68-1 84 30-22-20-50-25-77-15-25 10-36 32-27 54C4 73 14 44 47 30Z" fill="url(#ritNavy)"/>
+    <path d="M136 68c10-2 21 2 27 10-7-2-14 0-18 8-3-8-8-12-15-14 2-2 4-3 6-4Z" fill="url(#ritNavy)"/>
+  </g>
+
+  <path d="M44 280h672" stroke="#0077E5" stroke-width="4"/>
+  <text x="48" y="332" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="6" fill="#0077E5">RIT</text>
+  <text x="172" y="332" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700" fill="#071F55">Softtech Academy</text>
+</svg>

@@ -1,0 +1,80 @@
+export const successStories = [
+  {
+    id: 1,
+    name: "Anjali Reddy",
+    course: "Python Full Stack Development",
+    previousStatus: "BCA Graduate, Fresher",
+    role: "Software Developer",
+    company: "Wipro Technologies",
+    year: "2026",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
+    quote: "The live projects gave me the confidence to crack technical interviews.",
+    story: "After completing my BCA, I was struggling to clear technical rounds because I lacked practical project experience. RIT's Python Full Stack program was intensive and completely hands-on. By the end of the course, I had built three full-stack applications including an e-commerce clone. During my interview at Wipro, we spent 20 minutes discussing my project architecture, which secured my selection.",
+    careerPath: "Software Engineering"
+  },
+  {
+    id: 2,
+    name: "Rahul Verma",
+    course: "Java Full Stack Development",
+    previousStatus: "B.Tech, 1 Year Career Gap",
+    role: "Associate Software Engineer",
+    company: "Accenture",
+    year: "2026",
+    image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop",
+    quote: "They didn't just teach syntax; they taught me how to think like a developer.",
+    story: "I had a 1-year career gap due to personal reasons and was finding it difficult to get my resume shortlisted. I joined RIT to refresh my skills, but I gained much more. The mock interview sessions and resume building workshops were just as valuable as the technical Java Spring Boot training. The placement cell connected me directly with hiring drives.",
+    careerPath: "Software Engineering"
+  },
+  {
+    id: 3,
+    name: "Keerthi Lakshmi",
+    course: "Generative AI Master Program",
+    previousStatus: "Manual Tester",
+    role: "GenAI Application Developer",
+    company: "IBM India",
+    year: "2026",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop",
+    quote: "Transitioning from manual testing to AI development felt impossible until I found this program.",
+    story: "As a manual tester with 3 years of experience, I wanted to move into a more future-proof role. The Generative AI program at RIT taught me how to build LLM applications using LangChain and Python. The transition wasn't easy, but the instructors provided incredible support. I was able to transition internally at my previous company before getting a much better offer at IBM.",
+    careerPath: "Artificial Intelligence"
+  },
+  {
+    id: 4,
+    name: "Srinivas Goud",
+    course: "AWS Cloud Computing",
+    previousStatus: "System Administrator",
+    role: "Cloud Infrastructure Engineer",
+    company: "Cognizant",
+    year: "2025",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop",
+    quote: "Getting hands-on with real AWS infrastructure made all the difference.",
+    story: "I was working as a Linux system admin and knew I needed to upskill to Cloud. The RIT AWS course wasn't just theory; we had access to sandbox environments to actually build VPCs, deploy EC2 clusters, and configure load balancers. The certification guidance helped me clear my AWS Solutions Architect exam on the first attempt.",
+    careerPath: "Cloud & DevOps"
+  },
+  {
+    id: 5,
+    name: "Pooja Sharma",
+    course: "Data Science & Machine Learning",
+    previousStatus: "Non-IT Background (B.Com)",
+    role: "Data Analyst",
+    company: "Deloitte",
+    year: "2026",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600&auto=format&fit=crop",
+    quote: "Coming from a non-IT background, the structured approach to Python and SQL was perfect.",
+    story: "I had a B.Com degree and no coding background. I started with the foundation modules and gradually progressed to complex machine learning algorithms. The capstone project, where I analyzed retail sales data and built a predictive model, became the highlight of my portfolio. The Deloitte interviewers were impressed by my practical approach to data problem-solving.",
+    careerPath: "Data Science"
+  },
+  {
+    id: 6,
+    name: "Vikram Singh",
+    course: "DevOps Engineering",
+    previousStatus: "Support Engineer",
+    role: "DevOps Engineer",
+    company: "TCS",
+    year: "2025",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
+    quote: "Building full CI/CD pipelines in class prepared me for exactly what companies want.",
+    story: "My goal was to move from application support to DevOps. The curriculum covering Git, Jenkins, Docker, and Kubernetes was extensive. What helped most was the final project where we had to containerize a microservices application and deploy it using a fully automated CI/CD pipeline. I can confidently handle enterprise DevOps environments now.",
+    careerPath: "Cloud & DevOps"
+  }
+];

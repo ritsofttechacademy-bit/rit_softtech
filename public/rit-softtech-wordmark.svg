@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 92" role="img" aria-labelledby="title desc">
+  <title id="title">RIT Softtech Academy</title>
+  <desc id="desc">RIT Softtech Academy compact logo with elephant R mark.</desc>
+  <defs>
+    <linearGradient id="ritBlue" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0077E5"/>
+      <stop offset="0.52" stop-color="#0052B8"/>
+      <stop offset="1" stop-color="#071F55"/>
+    </linearGradient>
+    <linearGradient id="ritNavy" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0A326F"/>
+      <stop offset="1" stop-color="#071F55"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(4 7)">
+    <path
+      d="M0 0h49c16 0 29 4 39 12 10 8 15 19 15 33 0 11-3 20-10 28-6 8-15 13-26 16l36 47H67L37 94H24v42H0V0Zm24 23v49h28c8 0 15-2 20-6 5-4 7-10 7-18s-2-14-7-18c-5-5-12-7-21-7H24Z"
+      fill="url(#ritBlue)"
+      transform="scale(.58)"
+    />
+    <g transform="translate(8 15) scale(.52)">
+      <path
+        d="M63 0c36 0 66 27 66 62 0 30-23 56-54 61-7-15-12-33-9-50 2-13 8-22 20-28-13-10-30-12-45-6 1 20-7 36-24 47C14 66 6 55-5 43 3 18 29 0 63 0Z"
+        fill="#fff"
+      />
+      <path
+        d="M40 27c32-13 63-1 78 28-20-18-47-24-72-14-23 9-34 31-25 51C-1 68 9 41 40 27Z"
+        fill="url(#ritNavy)"
+      />
+      <path
+        d="M122 62c10-2 19 2 25 10-7-2-13 0-17 7-3-7-8-11-14-13 2-2 4-3 6-4Z"
+        fill="url(#ritNavy)"
+      />
+    </g>
+  </g>
+
+  <text x="92" y="39" font-family="Manrope, Inter, Arial, sans-serif" font-size="29" font-weight="800" fill="#071F55">RIT</text>
+  <text x="148" y="39" font-family="Manrope, Inter, Arial, sans-serif" font-size="29" font-weight="700" fill="#071F55">Softtech</text>
+  <text x="93" y="66" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="3.2" fill="#43536A">ACADEMY</text>
+  <path d="M93 75h220" stroke="#0077E5" stroke-width="2.4"/>
+</svg>
