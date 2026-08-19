@@ -9,7 +9,7 @@ export const siteConfig = {
     phoneSecondary: "+91 91009 40094",
     email: "info@ritsofttechacademy.com",
     location: "Hyderabad, Telangana",
-    whatsapp: "919100920092",
+    whatsapp: "919533672269",
     address: "3rd Floor, Tech Tower, Madhapur, Hyderabad – 500081",
     workingHours: "Mon–Sat: 9:00 AM – 7:00 PM",
   },

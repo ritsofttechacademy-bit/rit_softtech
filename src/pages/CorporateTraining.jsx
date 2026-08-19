@@ -46,12 +46,35 @@ const CorporateTraining = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      setToast({ show: true, message: "Training proposal request submitted successfully! Our team will contact you shortly.", type: "success" });
-      setFormData({ companyName: "", contactPerson: "", email: "", phone: "", teamSize: "", technology: "", trainingMode: "", startDate: "", requirements: "" });
-      setErrors({});
+      try {
+        const payload = {
+          name: formData.contactPerson,
+          email: formData.email,
+          phone: formData.phone,
+          course: formData.technology,
+          message: `Company: ${formData.companyName}\nTeam Size: ${formData.teamSize}\nMode: ${formData.trainingMode}\nStart: ${formData.startDate}\nReqs: ${formData.requirements}`,
+          type: "corporate"
+        };
+        const res = await fetch('http://localhost:5000/api/inquiries', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        
+        if (data.success) {
+          setToast({ show: true, message: "Training proposal request submitted successfully! Our team will contact you shortly.", type: "success" });
+          setFormData({ companyName: "", contactPerson: "", email: "", phone: "", teamSize: "", technology: "", trainingMode: "", startDate: "", requirements: "" });
+          setErrors({});
+        } else {
+          setToast({ show: true, message: data.message || "Failed to submit request", type: "error" });
+        }
+      } catch (error) {
+        setToast({ show: true, message: "Server error. Please try again later.", type: "error" });
+      }
     }
   };
 

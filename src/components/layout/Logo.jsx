@@ -11,9 +11,9 @@ const Logo = ({ onClick }) => {
       aria-label={`${siteConfig.name} Home`}
     >
       <img
-        src="/rit-softtech-wordmark.svg"
+        src="/logo.png"
         alt={siteConfig.name}
-        className="h-12 w-auto max-w-[210px] object-contain lg:h-[54px] lg:max-w-[230px]"
+        className="h-20 w-auto max-w-[280px] object-contain lg:h-28 lg:max-w-[340px] py-1"
       />
     </Link>
   );

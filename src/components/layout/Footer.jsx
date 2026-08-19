@@ -80,7 +80,26 @@ const Footer = () => {
             </ul>
 
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Newsletter</h4>
-            <form className="relative" onSubmit={(e) => e.preventDefault()}>
+            <form className="relative" onSubmit={async (e) => {
+              e.preventDefault();
+              const email = e.target.elements[0].value;
+              try {
+                const res = await fetch('http://localhost:5000/api/subscribers', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ email })
+                });
+                const data = await res.json();
+                if (data.success) {
+                  alert("Subscribed successfully!");
+                  e.target.reset();
+                } else {
+                  alert(data.message || "Failed to subscribe");
+                }
+              } catch (err) {
+                alert("Server error. Please try again later.");
+              }
+            }}>
               <input 
                 type="email" 
                 placeholder="Enter email address" 
