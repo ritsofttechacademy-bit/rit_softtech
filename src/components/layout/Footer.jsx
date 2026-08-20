@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Brand & About (4 cols) */}
           <div className="lg:col-span-4">
             <Link to={ROUTES.HOME} className="inline-flex items-center bg-white rounded-lg px-3 py-2 mb-6">
-              <img src="/rit-softtech-wordmark.svg" alt={siteConfig.name} className="h-12 w-auto max-w-[220px] object-contain" />
+              <img src="/logo.png" alt={siteConfig.name} className="h-16 w-auto max-w-[240px] object-contain" />
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-sm">
               Empowering the next generation of tech professionals with industry-relevant training, expert mentorship, and placement assistance.
