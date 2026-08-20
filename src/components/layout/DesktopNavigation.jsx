@@ -8,10 +8,10 @@ import { AnimatePresence, motion } from "framer-motion";
 const DesktopNavigation = () => {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
-  
+
   const coursesTimer = useRef(null);
   const resourcesTimer = useRef(null);
-  
+
   const location = useLocation();
 
   // Close menus on route change
@@ -56,12 +56,11 @@ const DesktopNavigation = () => {
   };
 
   const navItemClass = ({ isActive }) =>
-    `relative flex items-center gap-1 text-[13px] xl:text-sm font-bold transition-colors py-6 ${
-      isActive ? "text-primary-600" : "text-navy hover:text-primary-600"
+    `relative flex items-center gap-1 text-[13px] xl:text-sm font-bold transition-colors py-6 ${isActive ? "text-primary-600" : "text-navy hover:text-primary-600"
     }`;
 
   const resources = [
-    { name: "Tech Blog", path: ROUTES.BLOG },
+    // { name: "Tech Blog", path: ROUTES.BLOG },
     { name: "Student Reviews", path: ROUTES.STUDENT_REVIEWS },
     { name: "Success Stories", path: ROUTES.SUCCESS_STORIES },
     { name: "Our Trainers", path: ROUTES.TRAINERS },
@@ -75,15 +74,14 @@ const DesktopNavigation = () => {
       </NavLink>
 
       {/* Courses Dropdown */}
-      <div 
+      <div
         className="h-full"
         onMouseEnter={() => handleMouseEnter("courses")}
         onMouseLeave={() => handleMouseLeave("courses")}
       >
         <button
-          className={`relative flex items-center gap-1 text-[13px] xl:text-sm font-bold transition-colors py-6 ${
-            location.pathname.startsWith("/courses") || isCoursesOpen ? "text-primary-600" : "text-navy hover:text-primary-600"
-          }`}
+          className={`relative flex items-center gap-1 text-[13px] xl:text-sm font-bold transition-colors py-6 ${location.pathname.startsWith("/courses") || isCoursesOpen ? "text-primary-600" : "text-navy hover:text-primary-600"
+            }`}
           aria-expanded={isCoursesOpen}
           aria-haspopup="true"
         >
@@ -96,38 +94,37 @@ const DesktopNavigation = () => {
       <NavLink to={ROUTES.BATCHES} className={navItemClass}>
         Batches
       </NavLink>
-      
+
       <NavLink to={ROUTES.PLACEMENTS} className={navItemClass}>
         Placements
       </NavLink>
-      
-      <NavLink to={ROUTES.CORPORATE_TRAINING} className="hidden xl:flex relative items-center gap-1 text-[13px] xl:text-sm font-bold transition-colors py-6 text-navy hover:text-primary-600">
-        {({ isActive }) => (
+
+      {/* <NavLink to={ROUTES.CORPORATE_TRAINING} className="hidden xl:flex relative items-center gap-1 text-[13px] xl:text-sm font-bold transition-colors py-6 text-navy hover:text-primary-600">
+        {/* {({ isActive }) => (
           <span className={isActive ? "text-primary-600" : ""}>Corporate Training</span>
         )}
-      </NavLink>
-      
+      </NavLink> */}
+
       <NavLink to={ROUTES.ABOUT} className={navItemClass}>
         About
       </NavLink>
 
       {/* Resources Dropdown */}
-      <div 
+      <div
         className="relative h-full"
         onMouseEnter={() => handleMouseEnter("resources")}
         onMouseLeave={() => handleMouseLeave("resources")}
       >
         <button
-          className={`relative flex items-center gap-1 text-[13px] xl:text-sm font-bold transition-colors py-6 ${
-            resources.some(r => location.pathname.startsWith(r.path)) || isResourcesOpen ? "text-primary-600" : "text-navy hover:text-primary-600"
-          }`}
+          className={`relative flex items-center gap-1 text-[13px] xl:text-sm font-bold transition-colors py-6 ${resources.some(r => location.pathname.startsWith(r.path)) || isResourcesOpen ? "text-primary-600" : "text-navy hover:text-primary-600"
+            }`}
           aria-expanded={isResourcesOpen}
           aria-haspopup="true"
         >
           Resources
           <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isResourcesOpen ? "rotate-180" : ""}`} />
         </button>
-        
+
         <AnimatePresence>
           {isResourcesOpen && (
             <motion.div

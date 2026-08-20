@@ -24,12 +24,11 @@ const MobileNavigation = ({ isOpen, onClose }) => {
   }, [isOpen]);
 
   const navItemClass = ({ isActive }) =>
-    `block py-4 font-heading font-bold text-lg border-b border-border/50 transition-colors ${
-      isActive ? "text-primary-600" : "text-navy"
+    `block py-4 font-heading font-bold text-lg border-b border-border/50 transition-colors ${isActive ? "text-primary-600" : "text-navy"
     }`;
 
   const resources = [
-    { name: "Tech Blog", path: ROUTES.BLOG },
+    // { name: "Tech Blog", path: ROUTES.BLOG },
     { name: "Student Reviews", path: ROUTES.STUDENT_REVIEWS },
     { name: "Success Stories", path: ROUTES.SUCCESS_STORIES },
     { name: "Our Trainers", path: ROUTES.TRAINERS },
@@ -49,7 +48,7 @@ const MobileNavigation = ({ isOpen, onClose }) => {
             className="absolute inset-0 bg-navy/60 backdrop-blur-sm"
             onClick={onClose}
           />
-          
+
           {/* Drawer */}
           <motion.div
             initial={{ x: "100%" }}
@@ -82,15 +81,15 @@ const MobileNavigation = ({ isOpen, onClose }) => {
                 <NavLink to={ROUTES.BATCHES} onClick={onClose} className={navItemClass}>
                   Batches
                 </NavLink>
-                
+
                 <NavLink to={ROUTES.PLACEMENTS} onClick={onClose} className={navItemClass}>
                   Placements
                 </NavLink>
-                
+
                 <NavLink to={ROUTES.CORPORATE_TRAINING} onClick={onClose} className={navItemClass}>
                   Corporate Training
                 </NavLink>
-                
+
                 <NavLink to={ROUTES.ABOUT} onClick={onClose} className={navItemClass}>
                   About Us
                 </NavLink>
@@ -135,8 +134,8 @@ const MobileNavigation = ({ isOpen, onClose }) => {
 
             {/* Sticky Actions */}
             <div className="p-4 md:p-6 border-t border-border bg-slate-50 mt-auto">
-              <Button 
-                className="w-full justify-center shadow-md mb-3" 
+              <Button
+                className="w-full justify-center shadow-md mb-3"
                 size="lg"
                 onClick={() => {
                   onClose();
@@ -146,10 +145,10 @@ const MobileNavigation = ({ isOpen, onClose }) => {
                 Enquire Now
               </Button>
               <div className="flex gap-2">
-                <Button variant="secondary" className="flex-1 justify-center" href="tel:+919100920092">
+                <Button variant="secondary" className="flex-1 justify-center" href="tel:+919533672269">
                   Call Advisor
                 </Button>
-                <Button variant="outline" className="flex-[0.5] justify-center px-0" href="https://wa.me/919100920092" target="_blank" rel="noreferrer">
+                <Button variant="outline" className="flex-[0.5] justify-center px-0" href="https://wa.me/9533672269" target="_blank" rel="noreferrer">
                   <i className="fab fa-whatsapp text-lg text-emerald-500"></i>
                 </Button>
               </div>

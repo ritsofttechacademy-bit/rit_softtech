@@ -5,12 +5,12 @@ export const siteConfig = {
   foundedYear: 2001,
 
   contact: {
-    phonePrimary: "+91 91009 20092",
-    phoneSecondary: "+91 91009 40094",
+    phonePrimary: "+91 9533672269",
+    phoneSecondary: "+91 9533672269",
     email: "info@ritsofttechacademy.com",
     location: "Hyderabad, Telangana",
     whatsapp: "919533672269",
-    address: "3rd Floor, Tech Tower, Madhapur, Hyderabad – 500081",
+    address: "19/2rt, 1 st Floor, Punjagutta, Hyderabad – 500082.",
     workingHours: "Mon–Sat: 9:00 AM – 7:00 PM",
   },
 
@@ -32,11 +32,9 @@ export const siteConfig = {
   },
 
   social: {
-    linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
-    facebook: "https://facebook.com",
-    youtube: "https://youtube.com",
-    x: "https://x.com",
+    facebook: "https://www.facebook.com/profile.php?id=61593152894885",
+    instagram: "https://www.instagram.com/ritsofttechacademyofficial/",
+    whatsapp: "https://whatsapp.com/channel/0029VbDetzt5fM5Vh2xbv11k",
   },
 
   announcements: [

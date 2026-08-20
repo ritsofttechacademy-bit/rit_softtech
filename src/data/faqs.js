@@ -17,7 +17,7 @@ export const faqs = [
     id: 3,
     question: "Are classroom training centers available? Where are they located?",
     answer:
-      "Yes. Our primary training center is located at 3rd Floor, Tech Tower, Madhapur, Hyderabad – 500081. This is Hyderabad's primary IT corridor, easily accessible by public transport and metro. Our facilities include dedicated lab machines, high-speed internet, and collaborative project workspaces.",
+      "Yes. Our primary training center is located at 19/2rt, 1st Floor, Punjagutta, Hyderabad – 500082. This is Hyderabad's primary IT corridor, easily accessible by public transport and metro. Our facilities include dedicated lab machines, high-speed internet, and collaborative project workspaces.",
     category: "Training",
   },
   {
@@ -66,7 +66,7 @@ export const faqs = [
     id: 10,
     question: "How can I enroll in a course?",
     answer:
-      "You can enroll in three ways: (1) Fill out the online enquiry form on our website and our counseling team will contact you within 24 hours to complete enrollment. (2) Call us directly at +91 91009 20092 during working hours (Mon–Sat, 9 AM–7 PM). (3) Visit our Madhapur training center in person. After counseling, enrollment is completed by paying the course fee, after which you receive batch confirmation and joining details.",
+      "You can enroll in three ways: (1) Fill out the online enquiry form on our website and our counseling team will contact you within 24 hours to complete enrollment. (2) Call us directly at +91 9533672269 during working hours (Mon–Sat, 9 AM–7 PM). (3) Visit our Madhapur training center in person. After counseling, enrollment is completed by paying the course fee, after which you receive batch confirmation and joining details.",
     category: "General",
   },
   {
